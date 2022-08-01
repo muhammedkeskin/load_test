@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Logın" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">C:/Users/MuhammedKeskin/Desktop/roofstack_caseStudy/load test/userInfos.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames"></stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;.Not/A)Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;103&quot;, &quot;Chromium&quot;;v=&quot;103&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">www.biletdukkani.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_2" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_2</stringProp>
+            <stringProp name="Argument.value">firebaselogging-pa.googleapis.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_3" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_3</stringProp>
+            <stringProp name="Argument.value">maps.googleapis.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_4" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_4</stringProp>
+            <stringProp name="Argument.value">lb.revotas.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_5" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_5</stringProp>
+            <stringProp name="Argument.value">firebase.googleapis.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_6" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_6</stringProp>
+            <stringProp name="Argument.value">in.hotjar.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_7" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_7</stringProp>
+            <stringProp name="Argument.value">www.googleapis.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_8" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_8</stringProp>
+            <stringProp name="Argument.value">stats.g.doubleclick.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_9" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_9</stringProp>
+            <stringProp name="Argument.value">securetoken.googleapis.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_10" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_10</stringProp>
+            <stringProp name="Argument.value">europe-west3-prod-biletdukkani-b2b.cloudfunctions.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.biletdukkani.com/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">0</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;request_time_ms&quot;:&quot;1659294367641&quot;,&quot;client_info&quot;:{&quot;client_type&quot;:1,&quot;js_client_info&quot;:{}},&quot;log_source&quot;:462,&quot;log_event&quot;:[{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.azureedge.net/prod-cms/assets/maximum_902e0aee4e.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294351205500,\&quot;time_to_response_completed_us\&quot;:479200}}&quot;,&quot;event_time_ms&quot;:&quot;1659294351690&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://analytics.google.com/g/collect\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294351466900,\&quot;time_to_response_completed_us\&quot;:367400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294351842&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/sunexpress2_e2c46b6cdf.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294357274800,\&quot;time_to_response_completed_us\&quot;:479800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294357758&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/en.3cc0d38.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:997,\&quot;client_start_time_us\&quot;:1659294360008099,\&quot;time_to_response_initiated_us\&quot;:334399,\&quot;time_to_response_completed_us\&quot;:336000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294360357&quot;}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="csp_test" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">csp_test</stringProp>
+                  <stringProp name="Argument.value">true</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">maps/api/mapsjs/gen_204</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://lb.revotas.com/trc/api/middle.jsp" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="custkey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">custkey</stringProp>
+                  <stringProp name="Argument.value">biletdukkani_revotas</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">trc/api/middle.jsp</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-type" elementType="Header">
+                  <stringProp name="Header.name">Content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://firebase.googleapis.com/v1alpha/projects/-/apps/1:76588434866:web:265a0cc1ea4b95da4950ab/webConfig" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">v1alpha/projects/-/apps/1:76588434866:web:265a0cc1ea4b95da4950ab/webConfig</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="x-goog-api-key" elementType="Header">
+                  <stringProp name="Header.name">x-goog-api-key</stringProp>
+                  <stringProp name="Header.value">AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://lb.revotas.com/trc/api/middle.jsp?custkey=biletdukkani_revotas" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="custkey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">custkey</stringProp>
+                  <stringProp name="Argument.value">biletdukkani_revotas</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">trc/api/middle.jsp</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://lb.revotas.com/trc/api/middle.jsp" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="custkey" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">custkey</stringProp>
+                  <stringProp name="Argument.value">biletdukkani_revotas</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">trc/api/middle.jsp</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-type" elementType="Header">
+                  <stringProp name="Header.name">Content-type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://in.hotjar.com/api/v2/client/sites/2701159/visit-data?sv=7" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;r_value&quot;:1,&quot;is_vpv&quot;:false,&quot;session_only&quot;:false,&quot;rec_value&quot;:0.08333333333333333,&quot;user_id&quot;:&quot;7c3b05cc-f39d-5d02-958c-aa80b896b746&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v2/client/sites/2701159/visit-data?sv=7</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;request_time_ms&quot;:&quot;1659294377719&quot;,&quot;client_info&quot;:{&quot;client_type&quot;:1,&quot;js_client_info&quot;:{}},&quot;log_source&quot;:462,&quot;log_event&quot;:[{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;trace_metric\&quot;:{\&quot;name\&quot;:\&quot;_wt_https://www.biletdukkani.com/\&quot;,\&quot;is_auto\&quot;:true,\&quot;client_start_time_us\&quot;:1659294366074700,\&quot;duration_us\&quot;:9909599,\&quot;counters\&quot;:{\&quot;domInteractive\&quot;:4669699,\&quot;domContentLoadedEventEnd\&quot;:5570199,\&quot;loadEventEnd\&quot;:9909599,\&quot;_fp\&quot;:4493299,\&quot;_fcp\&quot;:4493399}}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376328&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://maps.googleapis.com/maps/api/js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:57103,\&quot;client_start_time_us\&quot;:1659294368020500,\&quot;time_to_response_initiated_us\&quot;:1310900,\&quot;time_to_response_completed_us\&quot;:2947900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376329&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/5971316.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:2105,\&quot;client_start_time_us\&quot;:1659294368021500,\&quot;time_to_response_initiated_us\&quot;:214099,\&quot;time_to_response_completed_us\&quot;:217000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376329&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/e841e76.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:8127,\&quot;client_start_time_us\&quot;:1659294368023400,\&quot;time_to_response_initiated_us\&quot;:240400,\&quot;time_to_response_completed_us\&quot;:273099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376329&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/522672d.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:31188,\&quot;client_start_time_us\&quot;:1659294368024500,\&quot;time_to_response_initiated_us\&quot;:275099,\&quot;time_to_response_completed_us\&quot;:550500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376329&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/765bd8f.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:50636,\&quot;client_start_time_us\&quot;:1659294368025200,\&quot;time_to_response_initiated_us\&quot;:621500,\&quot;time_to_response_completed_us\&quot;:790699}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376329&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/c354042.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:44096,\&quot;client_start_time_us\&quot;:1659294368026099,\&quot;time_to_response_initiated_us\&quot;:795000,\&quot;time_to_response_completed_us\&quot;:868400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376331&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/e996816.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:26333,\&quot;client_start_time_us\&quot;:1659294368027000,\&quot;time_to_response_initiated_us\&quot;:873800,\&quot;time_to_response_completed_us\&quot;:1072599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376332&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/291eb91.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:72380,\&quot;client_start_time_us\&quot;:1659294368027700,\&quot;time_to_response_initiated_us\&quot;:1079799,\&quot;time_to_response_completed_us\&quot;:1152099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376332&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/2df1ea4.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:102494,\&quot;client_start_time_us\&quot;:1659294368029400,\&quot;time_to_response_initiated_us\&quot;:1154500,\&quot;time_to_response_completed_us\&quot;:1886500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376332&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/f026d95.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:4705,\&quot;client_start_time_us\&quot;:1659294368034099,\&quot;time_to_response_initiated_us\&quot;:1886300,\&quot;time_to_response_completed_us\&quot;:1888700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376332&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/3d20f2c.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:41606,\&quot;client_start_time_us\&quot;:1659294368036400,\&quot;time_to_response_initiated_us\&quot;:1884199,\&quot;time_to_response_completed_us\&quot;:1895300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376332&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/f92d838.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:13045,\&quot;client_start_time_us\&quot;:1659294368040900,\&quot;time_to_response_initiated_us\&quot;:1298800,\&quot;time_to_response_completed_us\&quot;:1309900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/a7217db.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5832,\&quot;client_start_time_us\&quot;:1659294368046300,\&quot;time_to_response_initiated_us\&quot;:1305400,\&quot;time_to_response_completed_us\&quot;:1307400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/c6dc05a.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:26933,\&quot;client_start_time_us\&quot;:1659294368049099,\&quot;time_to_response_initiated_us\&quot;:1311500,\&quot;time_to_response_completed_us\&quot;:1320800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/49274a6.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:41795,\&quot;client_start_time_us\&quot;:1659294368050400,\&quot;time_to_response_initiated_us\&quot;:1321000,\&quot;time_to_response_completed_us\&quot;:1342300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/c18f6ce.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:20269,\&quot;client_start_time_us\&quot;:1659294368052200,\&quot;time_to_response_initiated_us\&quot;:1346099,\&quot;time_to_response_completed_us\&quot;:1392000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/8a8b737.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5639,\&quot;client_start_time_us\&quot;:1659294368053200,\&quot;time_to_response_initiated_us\&quot;:1391899,\&quot;time_to_response_completed_us\&quot;:1434799}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/c34891b.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:57201,\&quot;client_start_time_us\&quot;:1659294368054099,\&quot;time_to_response_initiated_us\&quot;:1434500,\&quot;time_to_response_completed_us\&quot;:1581400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/f6d73e5.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:563,\&quot;client_start_time_us\&quot;:1659294368055099,\&quot;time_to_response_initiated_us\&quot;:1584700,\&quot;time_to_response_completed_us\&quot;:1588700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/2bf0082.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5260,\&quot;client_start_time_us\&quot;:1659294368057099,\&quot;time_to_response_initiated_us\&quot;:1583800,\&quot;time_to_response_completed_us\&quot;:1590700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/0e1b79f.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:34892,\&quot;client_start_time_us\&quot;:1659294368059700,\&quot;time_to_response_initiated_us\&quot;:1589699,\&quot;time_to_response_completed_us\&quot;:1747399}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/144050f.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1608,\&quot;client_start_time_us\&quot;:1659294368062300,\&quot;time_to_response_initiated_us\&quot;:1750599,\&quot;time_to_response_completed_us\&quot;:1752599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376334&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/2959090.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:10185,\&quot;client_start_time_us\&quot;:1659294368065000,\&quot;time_to_response_initiated_us\&quot;:1748099,\&quot;time_to_response_completed_us\&quot;:1760099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376335&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/ea9dcd1.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1512,\&quot;client_start_time_us\&quot;:1659294368066099,\&quot;time_to_response_initiated_us\&quot;:1762600,\&quot;time_to_response_completed_us\&quot;:1765800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376335&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/e44c4b8.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5091,\&quot;client_start_time_us\&quot;:1659294368067700,\&quot;time_to_response_initiated_us\&quot;:1761299,\&quot;time_to_response_completed_us\&quot;:1766399}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376335&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/0d09751.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:3043,\&quot;client_start_time_us\&quot;:1659294368068900,\&quot;time_to_response_initiated_us\&quot;:1767699,\&quot;time_to_response_completed_us\&quot;:1773000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376335&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/62628d7.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:12317,\&quot;client_start_time_us\&quot;:1659294368069500,\&quot;time_to_response_initiated_us\&quot;:1773200,\&quot;time_to_response_completed_us\&quot;:1799200}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376335&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/abe98f8.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1192,\&quot;client_start_time_us\&quot;:1659294368070400,\&quot;time_to_response_initiated_us\&quot;:1799699,\&quot;time_to_response_completed_us\&quot;:1802000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/1055262.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5720,\&quot;client_start_time_us\&quot;:1659294368071300,\&quot;time_to_response_initiated_us\&quot;:1799199,\&quot;time_to_response_completed_us\&quot;:1806000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/98f52b7.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:3846,\&quot;client_start_time_us\&quot;:1659294368073500,\&quot;time_to_response_initiated_us\&quot;:1805099,\&quot;time_to_response_completed_us\&quot;:1809900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/f7e7cfe.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:35127,\&quot;client_start_time_us\&quot;:1659294368074900,\&quot;time_to_response_initiated_us\&quot;:1809500,\&quot;time_to_response_completed_us\&quot;:1879199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/47f934b.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:4024,\&quot;client_start_time_us\&quot;:1659294368077800,\&quot;time_to_response_initiated_us\&quot;:1880500,\&quot;time_to_response_completed_us\&quot;:1882900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/d3ee891.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:31439,\&quot;client_start_time_us\&quot;:1659294368079900,\&quot;time_to_response_initiated_us\&quot;:1882400,\&quot;time_to_response_completed_us\&quot;:1917800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/7306f3e.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:6740,\&quot;client_start_time_us\&quot;:1659294368082000,\&quot;time_to_response_initiated_us\&quot;:1917300,\&quot;time_to_response_completed_us\&quot;:1921200}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/c2c6d9e.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:44214,\&quot;client_start_time_us\&quot;:1659294368083099,\&quot;time_to_response_initiated_us\&quot;:1923600,\&quot;time_to_response_completed_us\&quot;:2052800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/570b258.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1060,\&quot;client_start_time_us\&quot;:1659294368084300,\&quot;time_to_response_initiated_us\&quot;:2053599,\&quot;time_to_response_completed_us\&quot;:2059699}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376336&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/1aa5737.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:6982,\&quot;client_start_time_us\&quot;:1659294368085200,\&quot;time_to_response_initiated_us\&quot;:2058000,\&quot;time_to_response_completed_us\&quot;:2061199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/0ed14e9.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5015,\&quot;client_start_time_us\&quot;:1659294368086000,\&quot;time_to_response_initiated_us\&quot;:2060900,\&quot;time_to_response_completed_us\&quot;:2064099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/e9b68d2.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:37959,\&quot;client_start_time_us\&quot;:1659294368087000,\&quot;time_to_response_initiated_us\&quot;:2060900,\&quot;time_to_response_completed_us\&quot;:2093300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/e269e35.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:644,\&quot;client_start_time_us\&quot;:1659294368087800,\&quot;time_to_response_initiated_us\&quot;:2097099,\&quot;time_to_response_completed_us\&quot;:2099599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/7cb1f85.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:38143,\&quot;client_start_time_us\&quot;:1659294368088800,\&quot;time_to_response_initiated_us\&quot;:2096400,\&quot;time_to_response_completed_us\&quot;:2153400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/eb41a8d.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:6943,\&quot;client_start_time_us\&quot;:1659294368092900,\&quot;time_to_response_initiated_us\&quot;:2154099,\&quot;time_to_response_completed_us\&quot;:2210099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/3b1b0d5.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1937,\&quot;client_start_time_us\&quot;:1659294368096400,\&quot;time_to_response_initiated_us\&quot;:2208699,\&quot;time_to_response_completed_us\&quot;:2212800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/3ab3f76.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:37881,\&quot;client_start_time_us\&quot;:1659294368098000,\&quot;time_to_response_initiated_us\&quot;:2214700,\&quot;time_to_response_completed_us\&quot;:2246400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/css/91ce0cd.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:3384,\&quot;client_start_time_us\&quot;:1659294368099000,\&quot;time_to_response_initiated_us\&quot;:2250700,\&quot;time_to_response_completed_us\&quot;:2265599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/403ceb9.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:42355,\&quot;client_start_time_us\&quot;:1659294368101000,\&quot;time_to_response_initiated_us\&quot;:2264700,\&quot;time_to_response_completed_us\&quot;:2306800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/1357048.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:38246,\&quot;client_start_time_us\&quot;:1659294368103300,\&quot;time_to_response_initiated_us\&quot;:2305500,\&quot;time_to_response_completed_us\&quot;:2342099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376337&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/biletdukkani-logo.7a1b601.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:3858,\&quot;client_start_time_us\&quot;:1659294368109700,\&quot;time_to_response_initiated_us\&quot;:2339399,\&quot;time_to_response_completed_us\&quot;:2345500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.azureedge.net/prod-cms/assets/van_kare_d257caaf9e.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294368111000,\&quot;time_to_response_completed_us\&quot;:3434000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/ist_kare_2d1f0925be_a55b19caa9.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294368112500,\&quot;time_to_response_completed_us\&quot;:3465500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.azureedge.net/prod-cms/assets/izmir_kare_aca7868d05.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294368112900,\&quot;time_to_response_completed_us\&quot;:3521099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/istanbul_ucakbileti_kare_efa5a537a4_807a6f014e.png\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294368113400,\&quot;time_to_response_completed_us\&quot;:3469800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/icon-price.e080210.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1025,\&quot;client_start_time_us\&quot;:1659294368114099,\&quot;time_to_response_initiated_us\&quot;:2339100,\&quot;time_to_response_completed_us\&quot;:2342800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/icon-mobile.3b6e1fd.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:882,\&quot;client_start_time_us\&quot;:1659294368114400,\&quot;time_to_response_initiated_us\&quot;:2341199,\&quot;time_to_response_completed_us\&quot;:2348400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/icon-phone.515b0d7.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1136,\&quot;client_start_time_us\&quot;:1659294368114599,\&quot;time_to_response_initiated_us\&quot;:2341800,\&quot;time_to_response_completed_us\&quot;:2349400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.googletagmanager.com/gtm.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294368204200,\&quot;time_to_response_completed_us\&quot;:2810199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/flight.a26120a.webp\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:176970,\&quot;client_start_time_us\&quot;:1659294370433700,\&quot;time_to_response_initiated_us\&quot;:104399,\&quot;time_to_response_completed_us\&quot;:525599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376338&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/fonts/materialdesignicons-webfont.e9db400.woff2\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:325544,\&quot;client_start_time_us\&quot;:1659294370503200,\&quot;time_to_response_initiated_us\&quot;:602399,\&quot;time_to_response_completed_us\&quot;:863199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376339&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:37236,\&quot;client_start_time_us\&quot;:1659294370503800,\&quot;time_to_response_initiated_us\&quot;:857400,\&quot;time_to_response_completed_us\&quot;:1061799}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376339&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:58040,\&quot;client_start_time_us\&quot;:1659294370515000,\&quot;time_to_response_initiated_us\&quot;:1049599,\&quot;time_to_response_completed_us\&quot;:1166500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376339&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://maps.googleapis.com/maps/api/mapsjs/gen_204\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294371012099,\&quot;time_to_response_completed_us\&quot;:578200}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376339&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/b910313.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5028,\&quot;client_start_time_us\&quot;:1659294371620099,\&quot;time_to_response_initiated_us\&quot;:122800,\&quot;time_to_response_completed_us\&quot;:132000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376340&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/3bb7edf.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:5746,\&quot;client_start_time_us\&quot;:1659294371625000,\&quot;time_to_response_initiated_us\&quot;:89300,\&quot;time_to_response_completed_us\&quot;:101300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376340&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/d9ef4e6.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:4921,\&quot;client_start_time_us\&quot;:1659294371627000,\&quot;time_to_response_initiated_us\&quot;:87599,\&quot;time_to_response_completed_us\&quot;:107900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376340&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://static.hotjar.com/c/hotjar-2701159.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372042400,\&quot;time_to_response_completed_us\&quot;:229099}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376341&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkani.revotas.com/trc/api/revotas_style.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372049900,\&quot;time_to_response_completed_us\&quot;:76199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376341&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkani.revotas.com/trc/api/revotasapi.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372051099,\&quot;time_to_response_completed_us\&quot;:83400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376341&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkani.revotas.com/trc/smartwidget/smartwidget.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372053900,\&quot;time_to_response_completed_us\&quot;:163199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376341&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://revocdn.revotas.com/trc/api/rvts_tracker.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372172000,\&quot;time_to_response_completed_us\&quot;:337400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376341&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://revocdn.revotas.com/trc/api/rvts_order_tracker.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372174599,\&quot;time_to_response_completed_us\&quot;:394900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376342&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://revocdn.revotas.com/trc/api/rvts_activity_tracker.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372176400,\&quot;time_to_response_completed_us\&quot;:371599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://lb.revotas.com/trc/api/middle.jsp\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372182700,\&quot;time_to_response_completed_us\&quot;:119799}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://firebase.googleapis.com/v1alpha/projects/-/apps/1:76588434866:web:265a0cc1ea4b95da4950ab/webConfig\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372219800,\&quot;time_to_response_completed_us\&quot;:131400}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://cdn.quilljs.com/1.3.6/quill.snow.css\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372255099,\&quot;time_to_response_completed_us\&quot;:522900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://script.hotjar.com/modules.311bafb9406f6ba6bebc.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294372281599,\&quot;time_to_response_completed_us\&quot;:572700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.googletagmanager.com/gtag/js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294373122000,\&quot;time_to_response_completed_us\&quot;:330500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.google-analytics.com/analytics.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294373134099,\&quot;time_to_response_completed_us\&quot;:62100}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376343&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://11926865.fls.doubleclick.net/activityi;src=11926865;type=invmedia;cat=all-w0;ord=5847703247243;gtm=2wg7r0;auiddc=746584028.1654843994;~oref=https%3A%2F%2Fwww.biletdukkani.com%2F\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:632,\&quot;client_start_time_us\&quot;:1659294373186200,\&quot;time_to_response_initiated_us\&quot;:543599,\&quot;time_to_response_completed_us\&quot;:546599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376344&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://connect.facebook.net/en_US/fbevents.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294373203700,\&quot;time_to_response_completed_us\&quot;:308500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376344&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/call-to-register-right.e4f36ad.webp\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:48644,\&quot;client_start_time_us\&quot;:1659294373792000,\&quot;time_to_response_initiated_us\&quot;:93900,\&quot;time_to_response_completed_us\&quot;:189700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376344&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/paraf_7bc9a88734_226558d930.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374111099,\&quot;time_to_response_completed_us\&quot;:615500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376344&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/sunexpress_campain_3_677dbd72a1_ddd8bd05f7.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374112599,\&quot;time_to_response_completed_us\&quot;:613300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376344&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.azureedge.net/prod-cms/assets/maximum_kampanya_eaf85e9455.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374114500,\&quot;time_to_response_completed_us\&quot;:768800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376345&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.azureedge.net/prod-cms/assets/paraf_kampanya_gorsel_53fc46f747.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374116400,\&quot;time_to_response_completed_us\&quot;:1438599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376345&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkanilivestorage.blob.core.windows.net/prod-cms/assets/trirancharter_c0d998e411.jpg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374118900,\&quot;time_to_response_completed_us\&quot;:763699}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376345&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://vars.hotjar.com/box-0004cb77850b00d4aa7e1e08ff61e8f0.html\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374128099,\&quot;time_to_response_completed_us\&quot;:915300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376345&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.google-analytics.com/collect\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374639099,\&quot;time_to_response_completed_us\&quot;:228300}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376346&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://connect.facebook.net/signals/config/652634466111961\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294374659599,\&quot;time_to_response_completed_us\&quot;:459500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376346&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/0d51cd9.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:3837,\&quot;client_start_time_us\&quot;:1659294374771099,\&quot;time_to_response_initiated_us\&quot;:141000,\&quot;time_to_response_completed_us\&quot;:143700}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376346&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.facebook.com/tr/\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294375597200,\&quot;time_to_response_completed_us\&quot;:100199}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376347&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/_nuxt/img/google.a17df2d.svg\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:908,\&quot;client_start_time_us\&quot;:1659294375642099,\&quot;time_to_response_initiated_us\&quot;:102600,\&quot;time_to_response_completed_us\&quot;:105800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376347&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://lb.revotas.com/trc/api/middle.jsp\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294375973000,\&quot;time_to_response_completed_us\&quot;:188900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376347&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://lb.revotas.com/trc/api/middle.jsp\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294375982300,\&quot;time_to_response_completed_us\&quot;:233699}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376347&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.googleadservices.com/pagead/conversion_async.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:15465,\&quot;client_start_time_us\&quot;:1659294376097900,\&quot;time_to_response_initiated_us\&quot;:226199,\&quot;time_to_response_completed_us\&quot;:262900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376377&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.biletdukkani.com/favicon/favicon-32x32.png\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1987,\&quot;client_start_time_us\&quot;:1659294376183599,\&quot;time_to_response_initiated_us\&quot;:244400,\&quot;time_to_response_completed_us\&quot;:246900}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376435&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.facebook.com/tr/\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376221400,\&quot;time_to_response_completed_us\&quot;:241599}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376498&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://maps.googleapis.com/maps-api-v3/api/js/49/11/intl/tr_ALL/common.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376187800,\&quot;time_to_response_completed_us\&quot;:317500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376551&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://in.hotjar.com/api/v2/client/sites/2701159/visit-data\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376052500,\&quot;time_to_response_completed_us\&quot;:520500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376601&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://maps.googleapis.com/maps-api-v3/api/js/49/11/intl/tr_ALL/util.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376189599,\&quot;time_to_response_completed_us\&quot;:445500}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376678&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10785297883/\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:1376,\&quot;client_start_time_us\&quot;:1659294376371500,\&quot;time_to_response_initiated_us\&quot;:349400,\&quot;time_to_response_completed_us\&quot;:353000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376729&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://biletdukkani.alo-tech.com/chat/alochat.js\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376246700,\&quot;time_to_response_completed_us\&quot;:617000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294376912&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.google.com/pagead/1p-user-list/10785297883/\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:342,\&quot;client_start_time_us\&quot;:1659294376728000,\&quot;time_to_response_initiated_us\&quot;:245599,\&quot;time_to_response_completed_us\&quot;:248000}}&quot;,&quot;event_time_ms&quot;:&quot;1659294377004&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://www.google.com.tr/pagead/1p-user-list/10785297883/\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:342,\&quot;client_start_time_us\&quot;:1659294376728700,\&quot;time_to_response_initiated_us\&quot;:246699,\&quot;time_to_response_completed_us\&quot;:248899}}&quot;,&quot;event_time_ms&quot;:&quot;1659294377027&quot;},{&quot;source_extension_json_proto3&quot;:&quot;{\&quot;application_info\&quot;:{\&quot;google_app_id\&quot;:\&quot;1:76588434866:web:265a0cc1ea4b95da4950ab\&quot;,\&quot;app_instance_id\&quot;:\&quot;e4xQq6Bec3p9-zTvk0eU8J\&quot;,\&quot;web_app_info\&quot;:{\&quot;sdk_version\&quot;:\&quot;0.4.15\&quot;,\&quot;page_url\&quot;:\&quot;https://www.biletdukkani.com/\&quot;,\&quot;service_worker_status\&quot;:3,\&quot;visibility_state\&quot;:1,\&quot;effective_connection_type\&quot;:4},\&quot;application_process_state\&quot;:0},\&quot;network_request_metric\&quot;:{\&quot;url\&quot;:\&quot;https://chatserver.alo-tech.com/content/spa.html\&quot;,\&quot;http_method\&quot;:0,\&quot;http_response_code\&quot;:200,\&quot;response_payload_bytes\&quot;:0,\&quot;client_start_time_us\&quot;:1659294376889599,\&quot;time_to_response_completed_us\&quot;:568800}}&quot;,&quot;event_time_ms&quot;:&quot;1659294377464&quot;}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.googleapis.com/identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;identifier&quot;:&quot;${email}&quot;,&quot;continueUri&quot;:&quot;https://www.biletdukkani.com/&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://stats.g.doubleclick.net/j/collect?t=dc&amp;aip=1&amp;_r=3&amp;v=1&amp;_v=j96&amp;tid=UA-208657338-2&amp;cid=370656171.1641218587&amp;jid=901862718&amp;gjid=1239361295&amp;_gid=1325828321.1659014252&amp;_u=SCCAgEABAAAAAE~&amp;z=811087512" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="_r" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_r</stringProp>
+                  <stringProp name="Argument.value">3</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="t" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">t</stringProp>
+                  <stringProp name="Argument.value">dc</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="jid" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">jid</stringProp>
+                  <stringProp name="Argument.value">901862718</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="v" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">v</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_u" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">_u</stringProp>
+                  <stringProp name="Argument.value">SCCAgEABAAAAAE~</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_v" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_v</stringProp>
+                  <stringProp name="Argument.value">j96</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="aip" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">aip</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="z" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">z</stringProp>
+                  <stringProp name="Argument.value">811087512</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="tid" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">tid</stringProp>
+                  <stringProp name="Argument.value">UA-208657338-2</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="gjid" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">gjid</stringProp>
+                  <stringProp name="Argument.value">1239361295</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="cid" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">cid</stringProp>
+                  <stringProp name="Argument.value">370656171.1641218587</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_gid" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_gid</stringProp>
+                  <stringProp name="Argument.value">1325828321.1659014252</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_8}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">j/collect</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;email&quot;:&quot;${email}&quot;,&quot;password&quot;:&quot;${password}&quot;,&quot;returnSecureToken&quot;:true}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;idToken&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IjFhZjYwYzE3ZTJkNmY4YWQ1MzRjNDAwYzVhMTZkNjc2ZmFkNzc3ZTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHJvZC1iaWxldGR1a2thbmktYjJiIiwiYXVkIjoicHJvZC1iaWxldGR1a2thbmktYjJiIiwiYXV0aF90aW1lIjoxNjU5Mjk0Mzg3LCJ1c2VyX2lkIjoicWtuSFdZN2hSUFQzM1lFTzV4RVc0NkhvWXZWMiIsInN1YiI6InFrbkhXWTdoUlBUMzNZRU81eEVXNDZIb1l2VjIiLCJpYXQiOjE2NTkyOTQzODcsImV4cCI6MTY1OTI5Nzk4NywiZW1haWwiOiJxd2UxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInF3ZTEyM0BnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Jg48uy0-Rm5onIo6_ITps-Y5AUCeEsvidwDBfZMiLqOP1Jh6pIwyc0Iuw_4OMrcWmUo3dNK2aOCN5i0QtvHw38kffbKrwOXouBE6EzIcE0nke_5vc7d7PxtgUS_6tv1m454jwGpeMLW0dUlxJZqj0qfiKlmuZTF4sv9NtSqawsEt8ycjNfC_0t8_QSUTvfjN_baomn_XFiBnbZn_LA4493RWEw6XkFi8VjvEuEO73JOtOzHvCM6tm2NlFpI1h61eLVKakXTxV__R4hhOGYqWc_7NGl416RNaXky3kRzvdoYQWLU2z__rmN45qr93QXzrSmqnoLrMF5ds9_5eS1v1Fg&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://securetoken.googleapis.com/v1/token?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="key" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">key</stringProp>
+                  <stringProp name="Argument.value">AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="refresh_token" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">refresh_token</stringProp>
+                  <stringProp name="Argument.value">AOEOulYrBA9eqW-Vj9DFu0dISqYiRso6YBNIspZ68xydrbli0GU-kPArO-ThMNYErWY3iBEbaEaYtVUEkeOyGEFcQ0_b2xVDOZN3EU9hisPqHY8_Xj9Y1HPbo5uIqgZiH-LP8MKwXqFQ9riYk16mdYIDf9oCiho5y-6eShPnEGI5o4OXRSFCNJb1AkyZWkef3iZKh15P0Irw8O8ctan-4aFlT4fcbabcbKzyqJ89HT4-42DDHWaReBI</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="grant_type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">grant_type</stringProp>
+                  <stringProp name="Argument.value">refresh_token</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_9}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">v1/token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://securetoken.googleapis.com/v1/token?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="key" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">key</stringProp>
+                  <stringProp name="Argument.value">AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="refresh_token" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">refresh_token</stringProp>
+                  <stringProp name="Argument.value">AOEOulYrBA9eqW-Vj9DFu0dISqYiRso6YBNIspZ68xydrbli0GU-kPArO-ThMNYErWY3iBEbaEaYtVUEkeOyGEFcQ0_b2xVDOZN3EU9hisPqHY8_Xj9Y1HPbo5uIqgZiH-LP8MKwXqFQ9riYk16mdYIDf9oCiho5y-6eShPnEGI5o4OXRSFCNJb1AkyZWkef3iZKh15P0Irw8O8ctan-4aFlT4fcbabcbKzyqJ89HT4-42DDHWaReBI</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="grant_type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">grant_type</stringProp>
+                  <stringProp name="Argument.value">refresh_token</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_9}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">v1/token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://europe-west3-prod-biletdukkani-b2b.cloudfunctions.net/b2c-api/me" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_10}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">b2c-api/me</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFhZjYwYzE3ZTJkNmY4YWQ1MzRjNDAwYzVhMTZkNjc2ZmFkNzc3ZTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHJvZC1iaWxldGR1a2thbmktYjJiIiwiYXVkIjoicHJvZC1iaWxldGR1a2thbmktYjJiIiwiYXV0aF90aW1lIjoxNjU5Mjk0Mzg3LCJ1c2VyX2lkIjoicWtuSFdZN2hSUFQzM1lFTzV4RVc0NkhvWXZWMiIsInN1YiI6InFrbkhXWTdoUlBUMzNZRU81eEVXNDZIb1l2VjIiLCJpYXQiOjE2NTkyOTQzODgsImV4cCI6MTY1OTI5Nzk4OCwiZW1haWwiOiJxd2UxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInF3ZTEyM0BnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.ZaDMRXOpEwLC_eiSEbavi0xfdFn5lkHMvJeUAhIuJfwzH-ataWxCdA1kQEtt3LEZ65DO--uiEqavaFW34gbZoMnlHcwhNqpwTxIGKT-SEsrkpCN8dcaNV2Ga6oCk1v16eBkphCLOwNyIBhveGYutPx9qQuIcGL8E6GWhuXTVDjx3pu2l0KylIIYF_xdpr-knjqBYDRKOIZCXshq-nyLykquh9H25VfOBniWty0ki19jQHNK9pJBYSl6m7y0n7uAACJX5bZ7plI4r2Z_dDe6v9-CSgvsi_F5T_lrGPpkp2pg4lUjoO5FVqxoqDeTjveskHNsJo6y1n9kHmLMip0xBzQ</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.googleapis.com/identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;identifier&quot;:&quot;${email}&quot;,&quot;continueUri&quot;:&quot;https://www.biletdukkani.com/profil&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_7}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">identitytoolkit/v3/relyingparty/createAuthUri?key=AIzaSyAXeFI13klWxStlvFZjz0SJlcHUCgml8D4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="X-Client-Version" elementType="Header">
+                  <stringProp name="Header.name">X-Client-Version</stringProp>
+                  <stringProp name="Header.value">Chrome/JsCore/8.6.8/FirebaseCore-web</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://in.hotjar.com/api/v2/client/sites/2701159/visit-data?sv=7" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;r_value&quot;:1,&quot;is_vpv&quot;:false,&quot;session_only&quot;:false,&quot;rec_value&quot;:0.08333333333333333,&quot;user_id&quot;:&quot;7c3b05cc-f39d-5d02-958c-aa80b896b746&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v2/client/sites/2701159/visit-data?sv=7</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
