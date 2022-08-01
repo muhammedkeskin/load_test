@@ -12,7 +12,7 @@
     </TestPlan>
     <hashTree>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-        <stringProp name="filename">C:/Users/MuhammedKeskin/Desktop/roofstack_caseStudy/load test/userInfos.csv</stringProp>
+        <stringProp name="filename">userInfos.csv</stringProp>
         <stringProp name="fileEncoding"></stringProp>
         <stringProp name="variableNames"></stringProp>
         <boolProp name="ignoreFirstLine">false</boolProp>
